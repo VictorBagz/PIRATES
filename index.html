@@ -1,1 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirates Rugby Club | Home of Champions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="pirates.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/53/53283.png" alt="Pirates Logo" class="h-12 w-12">
+                        <span class="title-font text-3xl ml-2 text-gray-800">STANBIC BLACK PIRATES <span class="text-red-600">RFC</span></span>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-800 hover:text-orange-600 py-2">Home</a>
+                    <a href="#about" class="nav-link text-gray-800 hover:text-orange-600 py-2">About</a>
+                    <a href="#team" class="nav-link text-gray-800 hover:text-orange-600 py-2">Team</a>
+                    <a href="#fixtures" class="nav-link text-gray-800 hover:text-orange-600 py-2">Fixtures</a>
+                    <a href="#gallery" class="nav-link text-gray-800 hover:text-orange-600 py-2">Gallery</a>
+                    <a href="#contact" class="nav-link text-gray-800 hover:text-orange-600 py-2">Contact</a>
+                    <a href="#join" class="btn-primary text-white px-6 py-2 rounded-full font-semibold">Join Us</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white pb-4 px-4">
+            <a href="#home" class="block py-2 text-gray-800 hover:text-orange-600">Home</a>
+            <a href="#about" class="block py-2 text-gray-800 hover:text-orange-600">About</a>
+            <a href="#team" class="block py-2 text-gray-800 hover:text-orange-600">Team</a>
+            <a href="#fixtures" class="block py-2 text-gray-800 hover:text-orange-600">Fixtures</a>
+            <a href="#gallery" class="block py-2 text-gray-800 hover:text-orange-600">Gallery</a>
+            <a href="#contact" class="block py-2 text-gray-800 hover:text-orange-600">Contact</a>
+            <a href="#join" class="block btn-primary text-white px-4 py-2 rounded-full font-semibold text-center mt-2">Join Us</a>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="title-font text-5xl md:text-7xl mb-6">STANBIC BLACK PIRATES <span class="text-red-400">RUGBY</span>FC</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Official home to the Stanbic Black Pirates RFC. We play hard, we play fair, and we are in charge!</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#fixtures" class="btn-primary text-white px-8 py-3 rounded-full font-semibold text-lg">Upcoming Matches</a>
+                <a href="#join" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold text-lg">Join The Crew</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="stats-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">32</div>
+                    <div class="text-gray-600">Years Established</div>
+                </div>
+                <div class="stats-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">18</div>
+                    <div class="text-gray-600">League Titles</div>
+                </div>
+                <div class="stats-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">45+</div>
+                    <div class="text-gray-600">Active Players</div>
+                </div>
+                <div class="stats-card bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">12</div>
+                    <div class="text-gray-600">National Players</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl text-gray-800 mb-4">OUR <span class="text-orange-600">STORY</span></h2>
+                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1605&q=80" alt="Pirates Team" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">The Pirates Legacy</h3>
+                    <p class="text-gray-600 mb-4">Founded in 1987 by a group of rugby enthusiasts in Kampala, Pirates Uganda Rugby Club has grown to become one of the most successful and respected rugby clubs in East Africa.</p>
+                    <p class="text-gray-600 mb-6">Our name "Pirates" reflects our fearless approach to the game - we take what we want on the pitch through skill, determination, and teamwork. But off the pitch, we're a family committed to developing young talent and promoting rugby throughout Uganda.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-orange-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-trophy text-orange-600"></i>
+                            </div>
+                            <span class="text-gray-700">18 League Titles</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-orange-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-users text-orange-600"></i>
+                            </div>
+                            <span class="text-gray-700">45+ Active Players</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-orange-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-map-marker-alt text-orange-600"></i>
+                            </div>
+                            <span class="text-gray-700">Based in Kampala</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-orange-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-flag text-orange-600"></i>
+                            </div>
+                            <span class="text-gray-700">12 National Players</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#join" class="btn-primary text-white px-6 py-2 rounded-full font-semibold inline-block">Join Our Family</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl text-gray-800 mb-4">MEET THE <span class="text-orange-600">CREW</span></h2>
+                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Our talented squad of players who give their all on the pitch every game.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Player 1 -->
+                <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1560272564-c83eb6b26f43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1581&q=80" alt="Player" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">James Mugisha</h3>
+                        <p class="text-orange-600 font-medium">Captain | Fly-half</p>
+                        <p class="text-gray-600 mt-2">National team player with 12 years experience. Known for his strategic play.</p>
+                    </div>
+                </div>
+                
+                <!-- Player 2 -->
+                <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1541534741688-6078c6efb583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Player" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Robert Ssemakula</h3>
+                        <p class="text-orange-600 font-medium">Prop Forward</p>
+                        <p class="text-gray-600 mt-2">The team's powerhouse with incredible strength and scrum technique.</p>
+                    </div>
+                </div>
+                
+                <!-- Player 3 -->
+                <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Player" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">David Okello</h3>
+                        <p class="text-orange-600 font-medium">Scrum-half</p>
+                        <p class="text-gray-600 mt-2">Quick thinker with lightning-fast passes. Team's playmaker.</p>
+                    </div>
+                </div>
+                
+                <!-- Player 4 -->
+                <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Player" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Joseph Kato</h3>
+                        <p class="text-orange-600 font-medium">Wing</p>
+                        <p class="text-gray-600 mt-2">Team's top try scorer with incredible speed and agility.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold text-lg inline-block">View Full Squad</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixtures Section -->
+    <section id="fixtures" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl text-gray-800 mb-4">UPCOMING <span class="text-orange-600">FIXTURES</span></h2>
+                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Come support the Pirates at our next matches!</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                <!-- Fixture 1 -->
+                <div class="schedule-item p-6 flex flex-col md:flex-row items-center justify-between border-b border-gray-200">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <div class="text-xl font-bold text-gray-800">Pirates vs Rhinos</div>
+                        <div class="text-gray-600">Uganda Rugby Premier League</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-center mr-8">
+                            <div class="text-2xl font-bold text-orange-600">15</div>
+                            <div class="text-gray-600">July 2023</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-600">15:00</div>
+                            <div class="text-gray-600">Kampala Rugby Club</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-primary text-white px-6 py-2 rounded-full font-semibold mt-4 md:mt-0 md:ml-4">Get Tickets</a>
+                </div>
+                
+                <!-- Fixture 2 -->
+                <div class="schedule-item p-6 flex flex-col md:flex-row items-center justify-between border-b border-gray-200">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <div class="text-xl font-bold text-gray-800">Pirates vs Buffaloes</div>
+                        <div class="text-gray-600">Uganda Rugby Premier League</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-center mr-8">
+                            <div class="text-2xl font-bold text-orange-600">22</div>
+                            <div class="text-gray-600">July 2023</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-600">16:30</div>
+                            <div class="text-gray-600">Kyadondo Rugby Club</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-primary text-white px-6 py-2 rounded-full font-semibold mt-4 md:mt-0 md:ml-4">Get Tickets</a>
+                </div>
+                
+                <!-- Fixture 3 -->
+                <div class="schedule-item p-6 flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <div class="text-xl font-bold text-gray-800">Pirates vs Hippos</div>
+                        <div class="text-gray-600">Uganda Rugby Cup</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-center mr-8">
+                            <div class="text-2xl font-bold text-orange-600">05</div>
+                            <div class="text-gray-600">August 2023</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-orange-600">14:00</div>
+                            <div class="text-gray-600">Lugogo Rugby Grounds</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-primary text-white px-6 py-2 rounded-full font-semibold mt-4 md:mt-0 md:ml-4">Get Tickets</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold text-lg inline-block">View Full Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl text-gray-800 mb-4">ACTION <span class="text-orange-600">GALLERY</span></h2>
+                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Relive our greatest moments on and off the pitch.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Rugby Action" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1605&q=80" alt="Team Celebration" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Player Portrait" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1560272564-c83eb6b26f43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1581&q=80" alt="Match Action" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Training Session" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1541534741688-6078c6efb583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Team Huddle" class="w-full h-64 object-cover">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="btn-secondary text-white px-8 py-3 rounded-full font-semibold text-lg inline-block">View More Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-16 bg-orange-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl mb-4">JOIN THE <span class="text-gray-800">PIRATES</span></h2>
+                <div class="w-24 h-1 bg-gray-800 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4">Whether you're a player, sponsor, or fan, there's a place for you in the Pirates family.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
+                    <div class="text-5xl text-orange-600 mb-4">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Players</h3>
+                    <p class="mb-4">We're always looking for talented players to join our squad. Trials held monthly.</p>
+                    <a href="#" class="btn-primary text-white px-6 py-2 rounded-full font-semibold inline-block">Apply Now</a>
+                </div>
+                
+                <div class="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
+                    <div class="text-5xl text-orange-600 mb-4">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sponsors</h3>
+                    <p class="mb-4">Partner with Uganda's most successful rugby club and reach new audiences.</p>
+                    <a href="#" class="btn-primary text-white px-6 py-2 rounded-full font-semibold inline-block">Sponsor Us</a>
+                </div>
+                
+                <div class="bg-white text-gray-800 rounded-lg p-6 shadow-lg">
+                    <div class="text-5xl text-orange-600 mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Supporters</h3>
+                    <p class="mb-4">Join our official supporters club for exclusive benefits and matchday perks.</p>
+                    <a href="#" class="btn-primary text-white px-6 py-2 rounded-full font-semibold inline-block">Become a Fan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-4xl md:text-5xl text-gray-800 mb-4">GET IN <span class="text-orange-600">TOUCH</span></h2>
+                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Have questions? Want to book the Pirates for an event? Contact us!</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary text-white px-8 py-3 rounded-full font-semibold text-lg w-full md:w-auto">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Address</h4>
+                                    <p class="text-gray-600">Pirates Rugby Club, Lugogo Sports Complex, Kampala, Uganda</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">+256 700 123456 (Office)</p>
+                                    <p class="text-gray-600">+256 750 987654 (Team Manager)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">info@piratesuganda.com</p>
+                                    <p class="text-gray-600">players@piratesuganda.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-orange-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Office Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="title-font text-3xl md:text-4xl text-gray-800 mb-4">OUR <span class="text-orange-600">SPONSORS</span></h2>
+                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Proudly supported by these great organizations</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <img src="https://via.placeholder.com/150x80?text=Nile+Breweries" alt="Sponsor" class="sponsor-logo mx-auto h-16 object-contain">
+                <img src="https://via.placeholder.com/150x80?text=MTN+Uganda" alt="Sponsor" class="sponsor-logo mx-auto h-16 object-contain">
+                <img src="https://via.placeholder.com/150x80?text=Stanbic+Bank" alt="Sponsor" class="sponsor-logo mx-auto h-16 object-contain">
+                <img src="https://via.placeholder.com/150x80?text=Rugby+Africa" alt="Sponsor" class="sponsor-logo mx-auto h-16 object-contain">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/53/53283.png" alt="Pirates Logo" class="h-10 w-10">
+                        <span class="title-font text-2xl ml-2">PIRATES <span class="text-orange-600">UGANDA</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Uganda's most successful rugby club since 1987. Fearless on the pitch, a family off it.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-orange-600"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-600"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-600"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-orange-600">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-orange-600">About Us</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-orange-600">Our Team</a></li>
+                        <li><a href="#fixtures" class="text-gray-400 hover:text-orange-600">Fixtures</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-orange-600">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Club Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-orange-600">History</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-600">Trophy Room</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-600">Youth Academy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-600">Club Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-600">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on matches, events and club news.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pirates Uganda Rugby Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pirates.js></script>
+</body>
+</html>
